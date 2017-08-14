@@ -1,0 +1,108 @@
+body{
+	background:url(backgroundPicture.jpg) no-repeat center center fixed;
+	background-size: cover;
+	padding:0;
+	margin:0;
+}
+ul{
+	/*將list預設的樣式移除*/
+	list-style-type:none;
+	/*將list預設的留白移除*/
+	padding:0;
+	/*讓list可以包含已成為浮動元素的li*/
+	overflow:hidden;
+	/*讓list由左到右由背景色變成半透明*/
+	/*background:linear-gradient(to right, LightSeaGreen , rgba(255,255,255,0.5));*/
+	width:50%;
+	height:70px;
+	float:right;
+	margin-bottom:-10px;
+}
+
+li a{
+	display:inline-block;
+	padding:25px;
+	text-align:center;
+	text-decoration:none;
+	color:black;
+}
+/*將li設為浮動元素，就是將li設為inline元素*/
+li{
+	float:right;
+	margin:0;
+	padding:0;
+}
+
+li:hover{
+	background-color:Crimson;
+	transition: 1s;
+}
+#main{
+	width:100%;
+	padding:0;
+	text-align:center;
+}
+
+#main img#mainPic{
+	width:auto;
+	height:auto;
+	max-width:100%;
+	border-top:20px solid Brown;
+}
+
+#main div{
+	width:50%;
+	height:8%;
+	background-color:rgba(255,255,255,0.5);
+	padding:20px;
+	margin:0px auto;
+	margin-top:20px;
+}
+
+#main div button{
+	border:none;
+	font:16px microsoft jhenghei;
+	padding:10px 20px;
+	border-radius: 10px;
+}
+
+#main div button:hover{
+	cursor:pointer;
+	background-color: Crimson;
+	transition: background-color 0.3s linear;
+}
+
+#main div span{
+	padding:0 10px;
+}
+
+/*設定頁尾資訊*/
+#footer{
+	width:100%;
+	background-color:brown;
+	color:white;
+	font:12px microsoft jhenghei;
+	padding:0;
+	margin:0;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+#footer p{
+	margin:0;
+}
+#footer p#copyRight{
+	line-height:30px;
+	text-align:center;
+}
+
+html{
+    position: relative;
+    min-height: 100%;
+}
+img#hitrust{
+	float:left;
+	padding-top:10px;
+	padding-left:10px;
+}
